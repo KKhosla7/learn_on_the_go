@@ -5,15 +5,17 @@ import (
 	"math"
 )
 
-// Define interface
+// Shape is a representation of shape interface
 type Shape interface {
 	area() float64
 }
 
+// Circle is a representation of circle struct
 type Circle struct {
 	x, y, radius float64
 }
 
+// Rectangle is a representation of a rectangle struct
 type Rectangle struct {
 	width, height float64
 }
