@@ -5,7 +5,7 @@ import (
 	"strconv"
 )
 
-// Define Employee struct
+// Employee is a representation of a employee
 type Employee struct {
 	// firstName string
 	// lastName  string
@@ -30,7 +30,6 @@ func (e *Employee) birthdayToday() {
 // married today (Pointer Receiver)
 func (e *Employee) marriedToday(lastName string) {
 	if e.gender == "M" {
-		return
 	} else {
 		e.lastName = lastName
 	}
